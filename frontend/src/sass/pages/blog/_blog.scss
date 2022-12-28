@@ -1,0 +1,185 @@
+.blog {
+
+    &-main {
+        width: 55%;
+
+        @include centering-hack;
+    }
+
+    &-title {
+        margin-bottom: 4rem;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 4rem;
+        color: #333;
+        margin-top: -4rem;
+
+        &--sub {
+            text-align: center;
+            font-weight: 500;
+            margin-bottom: -3rem;
+            color: #555;
+        }
+    }
+
+    &-recent-posts {
+
+        display: flex;
+        width: 100%;
+        margin: 5rem 0;
+        justify-content: space-between;
+
+    }  
+    
+    &-preview-card {
+        border: 1px solid #aaa;
+        width: 20rem;
+        height: 23rem;
+        border-radius: 1rem;
+        position: relative;
+        transition: 0.5s;
+        overflow: hidden;
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.7);
+
+        &:hover {
+            transform: scale(1.2);
+        }
+
+        &:hover &--paw {
+            top: -1rem;
+            right: 1rem;
+            transform: scale(2.5) rotate(45deg);
+            opacity: 0.4;
+        }
+
+        &:hover &--title {
+            top: 3rem;
+            font-weight: 800;
+        }
+
+        &:hover &--author {
+            bottom: 12rem;
+            opacity: 1;
+        }
+
+        &:hover &--category {
+            bottom: 9rem;
+            opacity: 1;
+        }
+
+        &:hover .card-btn {
+            bottom: 2rem;
+            opacity: 1;
+        }
+
+        &--content {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: 1s;
+        }
+
+        &--paw {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -80%);
+            font-size: 5rem;
+            transition: 0.5s;
+            color: rgb(63, 174, 76);
+        }
+
+        &--title {
+            color: #555;
+            text-transform: uppercase;
+            position: absolute;
+            top: 12rem;
+            width: 100%;
+            transition: 0.5s;
+            line-height: 1;
+            font-size: 1.4rem;
+            padding: 0 .6rem;
+        }
+
+        &--author {
+            font-weight: 500;
+            opacity: 0;
+            position: absolute;
+            width: 100%;
+            bottom: -5rem;
+            transition: 0.7s;
+            transition-delay: 0.1s;
+
+            strong {
+                color: #777;
+            }
+        }
+
+        &--category {
+            font-weight: 500;
+            position: absolute;
+            width: 100%;
+            bottom: -10rem;
+            transition: 0.7s;
+            transition-delay: 0.2s;
+            opacity: 0;
+
+            strong {
+                color: #777;
+            }
+        }
+
+        &--btn {
+            padding: 10px 20px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            background: rgb(63, 174, 76);
+            color: #333;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            text-align: center;
+            backface-visibility: hidden;
+            transition: 0.3s;
+
+            &:hover {
+                color: #333;
+                background-color: #fff;
+                border: 2px solid rgb(63, 174, 76);
+                transform: scale(1.05) translateY(-.3rem);
+                box-shadow: 0 0.3rem 1rem rgba(0,0,0,0.5) ;
+            }
+
+            &:active {
+                transform: scale(1) translateY(0);
+                box-shadow: 0 0.1rem .8rem rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+}
+
+.card-btn {
+            position: absolute;
+            bottom: -50%;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: 0.5s;
+            transition-delay: 0.3s;
+}
+
+.recent-posts-container {
+                border-radius: .5rem;
+                box-shadow: 0 0 2rem rgba(0, 0, 0, 0.7);
+                border: 1px solid #333;
+                padding: 2rem 5rem;
+}
+
+.blog-buttons {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,0 +1,42 @@
+.note {
+    border: 1px solid #e6e6e6;
+    border-radius: .5rem;
+    text-align: left;
+    padding: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.note-from {
+    text-transform: uppercase;
+
+    &-author {
+        color: rgb(63, 174, 76);
+        font-weight: 800;
+        font-size: 1.4rem;
+    }
+}
+
+.note-head {
+    background: #f4f4f4;
+    padding: .5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.note-date {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    font-size: 14px;
+}
+
+.delete-note {
+    color: red;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}

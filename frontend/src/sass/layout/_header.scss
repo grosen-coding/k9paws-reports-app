@@ -1,0 +1,48 @@
+.header {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    height: auto;
+      border-bottom: 2px solid #ddd;
+
+
+    &__left {
+
+      width: 80%;
+      ul {
+        display: flex;
+
+        @include respond(phone) {
+            display: none;
+          }
+
+        li {
+          padding: 0 1.5rem;
+          letter-spacing: .12rem;
+          font-weight: 500;
+        }
+      }
+    }
+
+    &__right {
+      width: 20%;
+      ul {
+        display: flex;
+        justify-content: flex-end;
+
+        li {
+          padding: 0 1rem;
+        }
+      }
+    }
+  }
+}

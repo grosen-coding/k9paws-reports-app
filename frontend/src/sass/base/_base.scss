@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
+
+  @include respond(laptop) {
+    font-size: 60%;
+  }
+
+  @include respond(tab-land) {
+    font-size: 55%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+::selection {
+  background-color: $color-primary;
+  color: #fff;
+}
+
+p.status-in-progress {
+  color: orangered;
+}
+
+p.status-waiting {
+  color: red;
+}
+
+p.status-ready {
+  color: steelblue;
+}
+
+p.status-complete {
+  color: green;
+}

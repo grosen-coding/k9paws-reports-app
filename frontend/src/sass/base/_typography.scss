@@ -1,0 +1,80 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: $default-font-size;
+  line-height: 1.7;
+  color: $color-grey-dark;
+  letter-spacing: .1rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+
+// Headers
+
+.heading-container {
+  width: 100vw;
+}
+.heading-primary {
+  cursor: default;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+
+
+
+  &--main {
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: 1.5rem;
+    margin-bottom: 5rem;
+    animation: scaleIn 2s;
+    backface-visibility: hidden;
+
+
+  }
+
+  &--sub {
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 1.1rem;
+    animation: moveFromBottom 1.5s forwards;
+    animation-delay: 2s;
+    text-transform: lowercase;
+    opacity: 0;
+  }
+}
+
+// Logo
+.logo {
+  font-weight: 600;
+  color: $color-grey-very-dark;
+  transition: all 0.4s ease;
+
+  &--nine {
+    color: $color-primary;
+    font-size: 5rem;
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+    top: 0.9rem;
+    transition: all 0.4s ease;
+  }
+
+  &--nine-med {
+        font-size: 2.2rem;
+        color: $color-primary;
+  }
+
+  &--nine-sm {
+    font-size: 1.5rem;
+        color: $color-primary;
+  }
+}
+

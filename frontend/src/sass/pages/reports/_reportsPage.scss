@@ -1,0 +1,54 @@
+.main-reports {
+    &-container {
+        padding-top: 12rem;
+
+            .btn-block {
+                width: 50%;
+                margin: 0 auto;
+                margin-top: 30px;
+            }
+
+        form {
+
+            .form-group {
+                width: 60%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+
+
+    &-heading {
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 5rem;
+        color: #333;
+
+        .logo--nine {
+            font-size: 3rem;
+        }
+
+        h1 {
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+
+.report-page {
+    position: relative;
+    text-align: left;
+}
+
+.report-page h2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.report-page .btn {
+    margin-bottom: 30px;
+}
+

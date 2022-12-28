@@ -1,0 +1,36 @@
+.about {
+
+    &--container {
+        margin-top:  12rem;
+        padding: 2rem;
+    }
+
+    &--title {
+
+        &-main {
+            text-align: center;
+            color: #333;
+            text-transform: uppercase;
+            margin-bottom: 3rem;
+            font-size: 4rem;
+        }
+
+        &-sub {
+            text-transform: uppercase;
+            color: #666;
+        }
+    }
+
+    &--content {
+        display: flex;
+        width: 100%;
+
+        &-left {
+            width: 50%;
+        }
+
+        &-right{
+            width: 50%;
+        }
+    }
+}

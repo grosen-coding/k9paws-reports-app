@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+@import "sass/abstracts/mixins";
+@import "sass/abstracts/variables";
+
+@import "sass/base/base";
+@import "sass/base/animations";
+@import "sass/base/typography";
+@import "sass/base/utilities";
+
+@import "sass/pages/home";
+@import "sass/pages/about";
+@import "sass/pages/breedInfo";
+@import "sass/pages/contact";
+@import "sass/pages/login";
+@import "sass/pages/register";
+
+@import "sass/pages/blog/allBlogPosts";
+@import "sass/pages/blog/blog";
+@import "sass/pages/blog/blogPost";
+@import "sass/pages/blog/createBlogPost";
+
+@import "sass/pages/reports/report";
+@import "sass/pages/reports/currentReports";
+@import "sass/pages/reports/newReport";
+@import "sass/pages/reports/reportsPage";
+@import "sass/pages/reports/note";
+
+@import "sass/components/wrapper";
+@import "sass/components/forms";
+@import "sass/components/button";
+@import "sass/components/loadingSpinner";
+@import "sass/components/navbar";
+// @import "sass/components/slideshow";
+// @import "sass/components/card";
+// @import "sass/components/form";
+
+// @import "sass/layout/navigation";
+@import "sass/layout/header";
+@import "sass/layout/footer";

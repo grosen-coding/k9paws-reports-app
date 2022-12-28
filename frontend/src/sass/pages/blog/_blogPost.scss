@@ -1,0 +1,62 @@
+.post {
+
+        
+    &--container {
+        width: 100%;
+        padding: 12rem 0 8rem;
+        margin-top: -2rem;
+    }
+    
+    &--content {
+        border: 1px solid #ccc;
+        padding: 2rem;
+        box-shadow: 0.5rem 1rem 5rem rgba(0,0,0,0.5);
+        position: relative;
+        overflow: hidden;
+    }
+
+    &--title {
+
+        &-main {
+            // margin-bottom: 4rem;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 4rem;
+            color: #333;
+            margin-bottom: 2rem;
+        }
+
+        &-sub {
+                text-align: center;
+                font-weight: 500;
+                margin-bottom: 2rem;
+                color: #555;
+        }
+    }
+
+    &--text {
+        padding: 3rem;
+        font-size: 1.3rem;
+        letter-spacing: normal;
+        line-height: 1.2;
+        color: #333;
+    }
+}
+
+.post-paw {
+
+                font-size: 40rem;
+                position: absolute;
+                right: 0;
+                top: -15rem;
+                transform: rotate(45deg);
+                opacity: 0.3;
+                z-index: -1;
+                // transition: 0.5s;
+                color: rgb(63, 174, 76);
+
+
+    // transform: translate(20%, -70%) rotate(45deg);
+    // transform: translateX(50%)
+    // z-index: 100;
+}
